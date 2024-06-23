@@ -1,0 +1,168 @@
+
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>العمليات الرياضية</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body { padding: 20px; }
+                .table-responsive { width: 100%; margin: 20px 0; border-collapse: collapse; }
+                table, th, td { border: 1px solid black; }
+                th, td { padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .copyable { cursor: pointer; }
+                .copyable.clicked { color: red; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">العمليات الرياضية</h1>
+                <div class="table-responsive">
+                    <table border="1" class="dataframe table table-bordered table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>اسم الدالة</th>
+      <th>الصيغة العامة</th>
+      <th>الكود</th>
+      <th>النتيجة</th>
+      <th>الشرح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="abs">abs</span></td>
+      <td><span class="copyable" data-clipboard-text="abs(x)">abs(x)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(abs(-5))">print(abs(-5))</span></td>
+      <td><span class="copyable" data-clipboard-text="5">5</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي القيمة المطلقة للعدد.">تعطي القيمة المطلقة للعدد.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="round">round</span></td>
+      <td><span class="copyable" data-clipboard-text="round(x, n)">round(x, n)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(round(3.14159, 2))">print(round(3.14159, 2))</span></td>
+      <td><span class="copyable" data-clipboard-text="3.14">3.14</span></td>
+      <td><span class="copyable" data-clipboard-text="تقرب العدد إلى عدد معين من المنازل العشرية.">تقرب العدد إلى عدد معين من المنازل العشرية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="pow">pow</span></td>
+      <td><span class="copyable" data-clipboard-text="pow(x, y)">pow(x, y)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(pow(2, 3))">print(pow(2, 3))</span></td>
+      <td><span class="copyable" data-clipboard-text="8">8</span></td>
+      <td><span class="copyable" data-clipboard-text="ترفع العدد إلى قوة معينة.">ترفع العدد إلى قوة معينة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="max">max</span></td>
+      <td><span class="copyable" data-clipboard-text="max(iterable)">max(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(max([1, 2, 3, 4]))">print(max([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="4">4</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي أكبر قيمة في القائمة أو المجموعة.">تعطي أكبر قيمة في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="min">min</span></td>
+      <td><span class="copyable" data-clipboard-text="min(iterable)">min(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(min([1, 2, 3, 4]))">print(min([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="1">1</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي أصغر قيمة في القائمة أو المجموعة.">تعطي أصغر قيمة في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="sum">sum</span></td>
+      <td><span class="copyable" data-clipboard-text="sum(iterable)">sum(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(sum([1, 2, 3, 4]))">print(sum([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="10">10</span></td>
+      <td><span class="copyable" data-clipboard-text="تحسب مجموع القيم في القائمة أو المجموعة.">تحسب مجموع القيم في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="divmod">divmod</span></td>
+      <td><span class="copyable" data-clipboard-text="divmod(a, b)">divmod(a, b)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(divmod(9, 2))">print(divmod(9, 2))</span></td>
+      <td><span class="copyable" data-clipboard-text="(4, 1)">(4, 1)</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي خارج القسمة والباقي كزوج من القيم.">تعطي خارج القسمة والباقي كزوج من القيم.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="sqrt">sqrt</span></td>
+      <td><span class="copyable" data-clipboard-text="math.sqrt(x)">math.sqrt(x)</span></td>
+      <td><span class="copyable" data-clipboard-text="import math; print(math.sqrt(16))">import math; print(math.sqrt(16))</span></td>
+      <td><span class="copyable" data-clipboard-text="4">4</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي الجذر التربيعي للعدد.">تعطي الجذر التربيعي للعدد.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="log">log</span></td>
+      <td><span class="copyable" data-clipboard-text="math.log(x, base)">math.log(x, base)</span></td>
+      <td><span class="copyable" data-clipboard-text="import math; print(math.log(8, 2))">import math; print(math.log(8, 2))</span></td>
+      <td><span class="copyable" data-clipboard-text="3">3</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي اللوغاريتم للعدد بالنسبة لقاعدة معينة.">تعطي اللوغاريتم للعدد بالنسبة لقاعدة معينة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="sin">sin</span></td>
+      <td><span class="copyable" data-clipboard-text="math.sin(x)">math.sin(x)</span></td>
+      <td><span class="copyable" data-clipboard-text="import math; print(math.sin(math.pi/2))">import math; print(math.sin(math.pi/2))</span></td>
+      <td><span class="copyable" data-clipboard-text="1">1</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي جيب الزاوية المعطاة بالراديان.">تعطي جيب الزاوية المعطاة بالراديان.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="cos">cos</span></td>
+      <td><span class="copyable" data-clipboard-text="math.cos(x)">math.cos(x)</span></td>
+      <td><span class="copyable" data-clipboard-text="import math; print(math.cos(0))">import math; print(math.cos(0))</span></td>
+      <td><span class="copyable" data-clipboard-text="1">1</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي جيب تمام الزاوية المعطاة بالراديان.">تعطي جيب تمام الزاوية المعطاة بالراديان.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="tan">tan</span></td>
+      <td><span class="copyable" data-clipboard-text="math.tan(x)">math.tan(x)</span></td>
+      <td><span class="copyable" data-clipboard-text="import math; print(math.tan(math.pi/4))">import math; print(math.tan(math.pi/4))</span></td>
+      <td><span class="copyable" data-clipboard-text="1">1</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي ظل الزاوية المعطاة بالراديان.">تعطي ظل الزاوية المعطاة بالراديان.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="ceil">ceil</span></td>
+      <td><span class="copyable" data-clipboard-text="math.ceil(x)">math.ceil(x)</span></td>
+      <td><span class="copyable" data-clipboard-text="import math; print(math.ceil(3.4))">import math; print(math.ceil(3.4))</span></td>
+      <td><span class="copyable" data-clipboard-text="4">4</span></td>
+      <td><span class="copyable" data-clipboard-text="تقرب العدد إلى أقرب عدد صحيح أكبر أو يساويه.">تقرب العدد إلى أقرب عدد صحيح أكبر أو يساويه.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="floor">floor</span></td>
+      <td><span class="copyable" data-clipboard-text="math.floor(x)">math.floor(x)</span></td>
+      <td><span class="copyable" data-clipboard-text="import math; print(math.floor(3.6))">import math; print(math.floor(3.6))</span></td>
+      <td><span class="copyable" data-clipboard-text="3">3</span></td>
+      <td><span class="copyable" data-clipboard-text="تقرب العدد إلى أقرب عدد صحيح أقل أو يساويه.">تقرب العدد إلى أقرب عدد صحيح أقل أو يساويه.</span></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <a href="index.html" class="btn btn-primary">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var clipboard = new ClipboardJS('.copyable');
+                    clipboard.on('success', function(e) {
+                        e.clearSelection();
+                        alert('Copied: ' + e.text);
+                        e.trigger.classList.add('clicked');
+                    });
+                    clipboard.on('error', function(e) {
+                        alert('Failed to copy.');
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        

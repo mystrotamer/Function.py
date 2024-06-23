@@ -1,0 +1,152 @@
+
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>التجمعية</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body { padding: 20px; }
+                .table-responsive { width: 100%; margin: 20px 0; border-collapse: collapse; }
+                table, th, td { border: 1px solid black; }
+                th, td { padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .copyable { cursor: pointer; }
+                .copyable.clicked { color: red; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">التجمعية</h1>
+                <div class="table-responsive">
+                    <table border="1" class="dataframe table table-bordered table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>اسم الدالة</th>
+      <th>الصيغة العامة</th>
+      <th>الكود</th>
+      <th>النتيجة</th>
+      <th>الشرح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="sum">sum</span></td>
+      <td><span class="copyable" data-clipboard-text="sum(iterable)">sum(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(sum([1, 2, 3, 4]))">print(sum([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="10">10</span></td>
+      <td><span class="copyable" data-clipboard-text="تحسب مجموع القيم في القائمة أو المجموعة.">تحسب مجموع القيم في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="max">max</span></td>
+      <td><span class="copyable" data-clipboard-text="max(iterable)">max(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(max([1, 2, 3, 4]))">print(max([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="4">4</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي أكبر قيمة في القائمة أو المجموعة.">تعطي أكبر قيمة في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="min">min</span></td>
+      <td><span class="copyable" data-clipboard-text="min(iterable)">min(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(min([1, 2, 3, 4]))">print(min([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="1">1</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي أصغر قيمة في القائمة أو المجموعة.">تعطي أصغر قيمة في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="len">len</span></td>
+      <td><span class="copyable" data-clipboard-text="len(iterable)">len(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(len([1, 2, 3, 4]))">print(len([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="4">4</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي طول القائمة أو المجموعة.">تعطي طول القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="all">all</span></td>
+      <td><span class="copyable" data-clipboard-text="all(iterable)">all(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(all([True, True, False]))">print(all([True, True, False]))</span></td>
+      <td><span class="copyable" data-clipboard-text="False">False</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي True إذا كانت جميع القيم في القائمة True.">تعطي True إذا كانت جميع القيم في القائمة True.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="any">any</span></td>
+      <td><span class="copyable" data-clipboard-text="any(iterable)">any(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(any([False, False, True]))">print(any([False, False, True]))</span></td>
+      <td><span class="copyable" data-clipboard-text="True">True</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي True إذا كانت أي قيمة في القائمة True.">تعطي True إذا كانت أي قيمة في القائمة True.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="sorted">sorted</span></td>
+      <td><span class="copyable" data-clipboard-text="sorted(iterable)">sorted(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(sorted([3, 1, 4, 2]))">print(sorted([3, 1, 4, 2]))</span></td>
+      <td><span class="copyable" data-clipboard-text="[1, 2, 3, 4]">[1, 2, 3, 4]</span></td>
+      <td><span class="copyable" data-clipboard-text="تعيد قائمة مرتبة من القيم.">تعيد قائمة مرتبة من القيم.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="enumerate">enumerate</span></td>
+      <td><span class="copyable" data-clipboard-text="enumerate(iterable)">enumerate(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(list(enumerate(['a', 'b', 'c'])))">print(list(enumerate(['a', 'b', 'c'])))</span></td>
+      <td><span class="copyable" data-clipboard-text="[(0, 'a'), (1, 'b'), (2, 'c')]">[(0, 'a'), (1, 'b'), (2, 'c')]</span></td>
+      <td><span class="copyable" data-clipboard-text="تعيد قائمة من tuples تحتوي على الفهارس والقيم.">تعيد قائمة من tuples تحتوي على الفهارس والقيم.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="zip">zip</span></td>
+      <td><span class="copyable" data-clipboard-text="zip(*iterables)">zip(*iterables)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(list(zip([1, 2, 3], ['a', 'b', 'c'])))">print(list(zip([1, 2, 3], ['a', 'b', 'c'])))</span></td>
+      <td><span class="copyable" data-clipboard-text="[(1, 'a'), (2, 'b'), (3, 'c')]">[(1, 'a'), (2, 'b'), (3, 'c')]</span></td>
+      <td><span class="copyable" data-clipboard-text="تدمج القوائم أو المجموعات معًا كأزواج.">تدمج القوائم أو المجموعات معًا كأزواج.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="map">map</span></td>
+      <td><span class="copyable" data-clipboard-text="map(function, iterable)">map(function, iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(list(map(str.upper, ['a', 'b', 'c'])))">print(list(map(str.upper, ['a', 'b', 'c'])))</span></td>
+      <td><span class="copyable" data-clipboard-text="['A', 'B', 'C']">['A', 'B', 'C']</span></td>
+      <td><span class="copyable" data-clipboard-text="تطبق دالة على كل عنصر في القائمة أو المجموعة.">تطبق دالة على كل عنصر في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="filter">filter</span></td>
+      <td><span class="copyable" data-clipboard-text="filter(function, iterable)">filter(function, iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(list(filter(lambda x: x > 2, [1, 2, 3, 4])))">print(list(filter(lambda x: x > 2, [1, 2, 3, 4])))</span></td>
+      <td><span class="copyable" data-clipboard-text="[3, 4]">[3, 4]</span></td>
+      <td><span class="copyable" data-clipboard-text="ترجع العناصر التي تحقق الشرط المعطى.">ترجع العناصر التي تحقق الشرط المعطى.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="reduce">reduce</span></td>
+      <td><span class="copyable" data-clipboard-text="functools.reduce(func, iterable)">functools.reduce(func, iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="import functools; print(functools.reduce(lambda x, y: x + y, [1, 2, 3, 4]))">import functools; print(functools.reduce(lambda x, y: x + y, [1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="10">10</span></td>
+      <td><span class="copyable" data-clipboard-text="تطبق دالة تراكمية على العناصر من اليسار إلى اليمين.">تطبق دالة تراكمية على العناصر من اليسار إلى اليمين.</span></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <a href="index.html" class="btn btn-primary">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var clipboard = new ClipboardJS('.copyable');
+                    clipboard.on('success', function(e) {
+                        e.clearSelection();
+                        alert('Copied: ' + e.text);
+                        e.trigger.classList.add('clicked');
+                    });
+                    clipboard.on('error', function(e) {
+                        alert('Failed to copy.');
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        

@@ -1,0 +1,136 @@
+
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>الاخراج</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body { padding: 20px; }
+                .table-responsive { width: 100%; margin: 20px 0; border-collapse: collapse; }
+                table, th, td { border: 1px solid black; }
+                th, td { padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .copyable { cursor: pointer; }
+                .copyable.clicked { color: red; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">الاخراج</h1>
+                <div class="table-responsive">
+                    <table border="1" class="dataframe table table-bordered table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>اسم الدالة</th>
+      <th>الصيغة العامة</th>
+      <th>الكود</th>
+      <th>النتيجة</th>
+      <th>الشرح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="print">print</span></td>
+      <td><span class="copyable" data-clipboard-text="print(value, ...)">print(value, ...)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("Hello, World!")">print("Hello, World!")</span></td>
+      <td><span class="copyable" data-clipboard-text="Hello, World!">Hello, World!</span></td>
+      <td><span class="copyable" data-clipboard-text="تطبع النص أو القيم إلى وحدة الإخراج القياسية.">تطبع النص أو القيم إلى وحدة الإخراج القياسية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="format">format</span></td>
+      <td><span class="copyable" data-clipboard-text="str.format(args, ...)">str.format(args, ...)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("Hello, {}".format("World"))">print("Hello, {}".format("World"))</span></td>
+      <td><span class="copyable" data-clipboard-text="Hello, World">Hello, World</span></td>
+      <td><span class="copyable" data-clipboard-text="تنسيق النص باستخدام تعبيرات.">تنسيق النص باستخدام تعبيرات.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="f-string">f-string</span></td>
+      <td><span class="copyable" data-clipboard-text="f"{expression}"">f"{expression}"</span></td>
+      <td><span class="copyable" data-clipboard-text="name = "World"; print(f"Hello, {name}")">name = "World"; print(f"Hello, {name}")</span></td>
+      <td><span class="copyable" data-clipboard-text="Hello, World">Hello, World</span></td>
+      <td><span class="copyable" data-clipboard-text="تنسيق النص باستخدام تعبيرات في بايثون 3.6 وما بعده.">تنسيق النص باستخدام تعبيرات في بايثون 3.6 وما بعده.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="file write">file write</span></td>
+      <td><span class="copyable" data-clipboard-text="file.write(string)">file.write(string)</span></td>
+      <td><span class="copyable" data-clipboard-text="with open('file.txt', 'w') as file: file.write("Hello, World!")">with open('file.txt', 'w') as file: file.write("Hello, World!")</span></td>
+      <td><span class="copyable" data-clipboard-text="(لا شيء)">(لا شيء)</span></td>
+      <td><span class="copyable" data-clipboard-text="كتابة نص إلى ملف.">كتابة نص إلى ملف.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="file writelines">file writelines</span></td>
+      <td><span class="copyable" data-clipboard-text="file.writelines(list)">file.writelines(list)</span></td>
+      <td><span class="copyable" data-clipboard-text="with open('file.txt', 'w') as file: file.writelines(["Hello\n", "World\n"])">with open('file.txt', 'w') as file: file.writelines(["Hello\n", "World\n"])</span></td>
+      <td><span class="copyable" data-clipboard-text="(لا شيء)">(لا شيء)</span></td>
+      <td><span class="copyable" data-clipboard-text="كتابة قائمة من الأسطر إلى ملف.">كتابة قائمة من الأسطر إلى ملف.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="csv writer">csv writer</span></td>
+      <td><span class="copyable" data-clipboard-text="csv.writer(file)">csv.writer(file)</span></td>
+      <td><span class="copyable" data-clipboard-text="import csv; with open('file.csv', 'w', newline='') as file: writer = csv.writer(file); writer.writerow(['Hello', 'World'])">import csv; with open('file.csv', 'w', newline='') as file: writer = csv.writer(file); writer.writerow(['Hello', 'World'])</span></td>
+      <td><span class="copyable" data-clipboard-text="(لا شيء)">(لا شيء)</span></td>
+      <td><span class="copyable" data-clipboard-text="كتابة صف إلى ملف CSV.">كتابة صف إلى ملف CSV.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="json dump">json dump</span></td>
+      <td><span class="copyable" data-clipboard-text="json.dump(obj, file)">json.dump(obj, file)</span></td>
+      <td><span class="copyable" data-clipboard-text="import json; data = {"hello": "world"}; with open('file.json', 'w') as file: json.dump(data, file)">import json; data = {"hello": "world"}; with open('file.json', 'w') as file: json.dump(data, file)</span></td>
+      <td><span class="copyable" data-clipboard-text="(لا شيء)">(لا شيء)</span></td>
+      <td><span class="copyable" data-clipboard-text="كتابة كائن بايثون إلى ملف JSON.">كتابة كائن بايثون إلى ملف JSON.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="logging">logging</span></td>
+      <td><span class="copyable" data-clipboard-text="logging.info(msg)">logging.info(msg)</span></td>
+      <td><span class="copyable" data-clipboard-text="import logging; logging.basicConfig(level=logging.INFO); logging.info("Hello, World!")">import logging; logging.basicConfig(level=logging.INFO); logging.info("Hello, World!")</span></td>
+      <td><span class="copyable" data-clipboard-text="INFO:root:Hello, World!">INFO:root:Hello, World!</span></td>
+      <td><span class="copyable" data-clipboard-text="تسجيل رسالة معلومات إلى وحدة الإخراج القياسية أو ملف.">تسجيل رسالة معلومات إلى وحدة الإخراج القياسية أو ملف.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="pprint">pprint</span></td>
+      <td><span class="copyable" data-clipboard-text="pprint.pprint(object)">pprint.pprint(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="import pprint; data = {'hello': 'world'}; pprint.pprint(data)">import pprint; data = {'hello': 'world'}; pprint.pprint(data)</span></td>
+      <td><span class="copyable" data-clipboard-text="{'hello': 'world'}">{'hello': 'world'}</span></td>
+      <td><span class="copyable" data-clipboard-text="طباعة كائنات بايثون بشكل منسق وسهل القراءة.">طباعة كائنات بايثون بشكل منسق وسهل القراءة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="sys.stdout.write">sys.stdout.write</span></td>
+      <td><span class="copyable" data-clipboard-text="sys.stdout.write(string)">sys.stdout.write(string)</span></td>
+      <td><span class="copyable" data-clipboard-text="import sys; sys.stdout.write("Hello, World!")">import sys; sys.stdout.write("Hello, World!")</span></td>
+      <td><span class="copyable" data-clipboard-text="Hello, World!">Hello, World!</span></td>
+      <td><span class="copyable" data-clipboard-text="كتابة نص إلى وحدة الإخراج القياسية بدون إضافة سطر جديد.">كتابة نص إلى وحدة الإخراج القياسية بدون إضافة سطر جديد.</span></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <a href="index.html" class="btn btn-primary">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var clipboard = new ClipboardJS('.copyable');
+                    clipboard.on('success', function(e) {
+                        e.clearSelection();
+                        alert('Copied: ' + e.text);
+                        e.trigger.classList.add('clicked');
+                    });
+                    clipboard.on('error', function(e) {
+                        alert('Failed to copy.');
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        

@@ -1,0 +1,152 @@
+
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>الوصفية</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body { padding: 20px; }
+                .table-responsive { width: 100%; margin: 20px 0; border-collapse: collapse; }
+                table, th, td { border: 1px solid black; }
+                th, td { padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .copyable { cursor: pointer; }
+                .copyable.clicked { color: red; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">الوصفية</h1>
+                <div class="table-responsive">
+                    <table border="1" class="dataframe table table-bordered table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>اسم الدالة</th>
+      <th>الصيغة العامة</th>
+      <th>الكود</th>
+      <th>النتيجة</th>
+      <th>الشرح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="type">type</span></td>
+      <td><span class="copyable" data-clipboard-text="type(object)">type(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(type(5))">print(type(5))</span></td>
+      <td><span class="copyable" data-clipboard-text="<class 'int'>"><class 'int'></span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي نوع الكائن.">تعطي نوع الكائن.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="isinstance">isinstance</span></td>
+      <td><span class="copyable" data-clipboard-text="isinstance(obj, class)">isinstance(obj, class)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(isinstance(5, int))">print(isinstance(5, int))</span></td>
+      <td><span class="copyable" data-clipboard-text="True">True</span></td>
+      <td><span class="copyable" data-clipboard-text="تتحقق مما إذا كان الكائن من نوع معين.">تتحقق مما إذا كان الكائن من نوع معين.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="id">id</span></td>
+      <td><span class="copyable" data-clipboard-text="id(object)">id(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(id(5))">print(id(5))</span></td>
+      <td><span class="copyable" data-clipboard-text="رقم فريد">رقم فريد</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي معرفًا فريدًا للكائن.">تعطي معرفًا فريدًا للكائن.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="dir">dir</span></td>
+      <td><span class="copyable" data-clipboard-text="dir(object)">dir(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(dir([1, 2, 3]))">print(dir([1, 2, 3]))</span></td>
+      <td><span class="copyable" data-clipboard-text="قائمة بالطرق والسمات">قائمة بالطرق والسمات</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي قائمة بالطرق والسمات المتاحة للكائن.">تعطي قائمة بالطرق والسمات المتاحة للكائن.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="help">help</span></td>
+      <td><span class="copyable" data-clipboard-text="help(object)">help(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="help(print)">help(print)</span></td>
+      <td><span class="copyable" data-clipboard-text="معلومات عن الكائن">معلومات عن الكائن</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي معلومات مساعدة حول الكائن أو الدالة.">تعطي معلومات مساعدة حول الكائن أو الدالة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="repr">repr</span></td>
+      <td><span class="copyable" data-clipboard-text="repr(object)">repr(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(repr("Hello"))">print(repr("Hello"))</span></td>
+      <td><span class="copyable" data-clipboard-text="'Hello'">'Hello'</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي تمثيل نصي رسمي للكائن يمكن تقييمه باستخدام eval().">تعطي تمثيل نصي رسمي للكائن يمكن تقييمه باستخدام eval().</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="str">str</span></td>
+      <td><span class="copyable" data-clipboard-text="str(object)">str(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(str(123))">print(str(123))</span></td>
+      <td><span class="copyable" data-clipboard-text="'123'">'123'</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل الكائن إلى سلسلة نصية.">تحويل الكائن إلى سلسلة نصية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="format">format</span></td>
+      <td><span class="copyable" data-clipboard-text="format(value, format_spec)">format(value, format_spec)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(format(123.456, '.2f'))">print(format(123.456, '.2f'))</span></td>
+      <td><span class="copyable" data-clipboard-text="'123.46'">'123.46'</span></td>
+      <td><span class="copyable" data-clipboard-text="تنسيق القيمة وفقًا للمواصفات المعطاة.">تنسيق القيمة وفقًا للمواصفات المعطاة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="vars">vars</span></td>
+      <td><span class="copyable" data-clipboard-text="vars(object)">vars(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(vars())">print(vars())</span></td>
+      <td><span class="copyable" data-clipboard-text="قاموس السمات">قاموس السمات</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي قاموس السمات لكائن معين.">تعطي قاموس السمات لكائن معين.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="callable">callable</span></td>
+      <td><span class="copyable" data-clipboard-text="callable(object)">callable(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(callable(print))">print(callable(print))</span></td>
+      <td><span class="copyable" data-clipboard-text="True">True</span></td>
+      <td><span class="copyable" data-clipboard-text="تتحقق مما إذا كان الكائن قابل للاستدعاء كدالة.">تتحقق مما إذا كان الكائن قابل للاستدعاء كدالة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="hash">hash</span></td>
+      <td><span class="copyable" data-clipboard-text="hash(object)">hash(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(hash("hello"))">print(hash("hello"))</span></td>
+      <td><span class="copyable" data-clipboard-text="رقم هاش">رقم هاش</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي قيمة هاش للكائن.">تعطي قيمة هاش للكائن.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="len">len</span></td>
+      <td><span class="copyable" data-clipboard-text="len(object)">len(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(len("hello"))">print(len("hello"))</span></td>
+      <td><span class="copyable" data-clipboard-text="5">5</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي طول الكائن القابل للتكرار.">تعطي طول الكائن القابل للتكرار.</span></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <a href="index.html" class="btn btn-primary">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var clipboard = new ClipboardJS('.copyable');
+                    clipboard.on('success', function(e) {
+                        e.clearSelection();
+                        alert('Copied: ' + e.text);
+                        e.trigger.classList.add('clicked');
+                    });
+                    clipboard.on('error', function(e) {
+                        alert('Failed to copy.');
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        

@@ -1,0 +1,168 @@
+
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>النصية</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body { padding: 20px; }
+                .table-responsive { width: 100%; margin: 20px 0; border-collapse: collapse; }
+                table, th, td { border: 1px solid black; }
+                th, td { padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .copyable { cursor: pointer; }
+                .copyable.clicked { color: red; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">النصية</h1>
+                <div class="table-responsive">
+                    <table border="1" class="dataframe table table-bordered table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>اسم الدالة</th>
+      <th>الصيغة العامة</th>
+      <th>الكود</th>
+      <th>النتيجة</th>
+      <th>الشرح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="upper">upper</span></td>
+      <td><span class="copyable" data-clipboard-text="str.upper()">str.upper()</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello".upper())">print("hello".upper())</span></td>
+      <td><span class="copyable" data-clipboard-text="HELLO">HELLO</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل جميع الأحرف إلى أحرف كبيرة.">تحويل جميع الأحرف إلى أحرف كبيرة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="lower">lower</span></td>
+      <td><span class="copyable" data-clipboard-text="str.lower()">str.lower()</span></td>
+      <td><span class="copyable" data-clipboard-text="print("HELLO".lower())">print("HELLO".lower())</span></td>
+      <td><span class="copyable" data-clipboard-text="hello">hello</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل جميع الأحرف إلى أحرف صغيرة.">تحويل جميع الأحرف إلى أحرف صغيرة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="capitalize">capitalize</span></td>
+      <td><span class="copyable" data-clipboard-text="str.capitalize()">str.capitalize()</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello world".capitalize())">print("hello world".capitalize())</span></td>
+      <td><span class="copyable" data-clipboard-text="Hello world">Hello world</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل الحرف الأول في السلسلة إلى حرف كبير.">تحويل الحرف الأول في السلسلة إلى حرف كبير.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="title">title</span></td>
+      <td><span class="copyable" data-clipboard-text="str.title()">str.title()</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello world".title())">print("hello world".title())</span></td>
+      <td><span class="copyable" data-clipboard-text="Hello World">Hello World</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل الحرف الأول من كل كلمة إلى حرف كبير.">تحويل الحرف الأول من كل كلمة إلى حرف كبير.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="strip">strip</span></td>
+      <td><span class="copyable" data-clipboard-text="str.strip()">str.strip()</span></td>
+      <td><span class="copyable" data-clipboard-text="print("  hello  ".strip())">print("  hello  ".strip())</span></td>
+      <td><span class="copyable" data-clipboard-text="hello">hello</span></td>
+      <td><span class="copyable" data-clipboard-text="إزالة الفراغات الزائدة من بداية ونهاية السلسلة.">إزالة الفراغات الزائدة من بداية ونهاية السلسلة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="lstrip">lstrip</span></td>
+      <td><span class="copyable" data-clipboard-text="str.lstrip()">str.lstrip()</span></td>
+      <td><span class="copyable" data-clipboard-text="print("  hello  ".lstrip())">print("  hello  ".lstrip())</span></td>
+      <td><span class="copyable" data-clipboard-text="hello">hello</span></td>
+      <td><span class="copyable" data-clipboard-text="إزالة الفراغات الزائدة من بداية السلسلة.">إزالة الفراغات الزائدة من بداية السلسلة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="rstrip">rstrip</span></td>
+      <td><span class="copyable" data-clipboard-text="str.rstrip()">str.rstrip()</span></td>
+      <td><span class="copyable" data-clipboard-text="print("  hello  ".rstrip())">print("  hello  ".rstrip())</span></td>
+      <td><span class="copyable" data-clipboard-text="hello">hello</span></td>
+      <td><span class="copyable" data-clipboard-text="إزالة الفراغات الزائدة من نهاية السلسلة.">إزالة الفراغات الزائدة من نهاية السلسلة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="split">split</span></td>
+      <td><span class="copyable" data-clipboard-text="str.split(sep=None)">str.split(sep=None)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello world".split())">print("hello world".split())</span></td>
+      <td><span class="copyable" data-clipboard-text="['hello', 'world']">['hello', 'world']</span></td>
+      <td><span class="copyable" data-clipboard-text="تقسيم السلسلة إلى قائمة من الكلمات بناءً على محدد معين.">تقسيم السلسلة إلى قائمة من الكلمات بناءً على محدد معين.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="join">join</span></td>
+      <td><span class="copyable" data-clipboard-text="sep.join(iterable)">sep.join(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("-".join(["hello", "world"]))">print("-".join(["hello", "world"]))</span></td>
+      <td><span class="copyable" data-clipboard-text="hello-world">hello-world</span></td>
+      <td><span class="copyable" data-clipboard-text="دمج قائمة من السلاسل النصية في سلسلة واحدة مع محدد معين.">دمج قائمة من السلاسل النصية في سلسلة واحدة مع محدد معين.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="replace">replace</span></td>
+      <td><span class="copyable" data-clipboard-text="str.replace(old, new)">str.replace(old, new)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello world".replace("world", "Python"))">print("hello world".replace("world", "Python"))</span></td>
+      <td><span class="copyable" data-clipboard-text="hello Python">hello Python</span></td>
+      <td><span class="copyable" data-clipboard-text="استبدال جزء من السلسلة النصية بآخر.">استبدال جزء من السلسلة النصية بآخر.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="find">find</span></td>
+      <td><span class="copyable" data-clipboard-text="str.find(sub)">str.find(sub)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello world".find("world"))">print("hello world".find("world"))</span></td>
+      <td><span class="copyable" data-clipboard-text="6">6</span></td>
+      <td><span class="copyable" data-clipboard-text="إيجاد أول موقع لجزء معين من السلسلة النصية.">إيجاد أول موقع لجزء معين من السلسلة النصية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="count">count</span></td>
+      <td><span class="copyable" data-clipboard-text="str.count(sub)">str.count(sub)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello world".count("l"))">print("hello world".count("l"))</span></td>
+      <td><span class="copyable" data-clipboard-text="3">3</span></td>
+      <td><span class="copyable" data-clipboard-text="عدّ عدد تكرارات جزء معين في السلسلة النصية.">عدّ عدد تكرارات جزء معين في السلسلة النصية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="startswith">startswith</span></td>
+      <td><span class="copyable" data-clipboard-text="str.startswith(prefix)">str.startswith(prefix)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello world".startswith("hello"))">print("hello world".startswith("hello"))</span></td>
+      <td><span class="copyable" data-clipboard-text="True">True</span></td>
+      <td><span class="copyable" data-clipboard-text="التحقق مما إذا كانت السلسلة تبدأ بجزء معين.">التحقق مما إذا كانت السلسلة تبدأ بجزء معين.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="endswith">endswith</span></td>
+      <td><span class="copyable" data-clipboard-text="str.endswith(suffix)">str.endswith(suffix)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("hello world".endswith("world"))">print("hello world".endswith("world"))</span></td>
+      <td><span class="copyable" data-clipboard-text="True">True</span></td>
+      <td><span class="copyable" data-clipboard-text="التحقق مما إذا كانت السلسلة تنتهي بجزء معين.">التحقق مما إذا كانت السلسلة تنتهي بجزء معين.</span></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <a href="index.html" class="btn btn-primary">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var clipboard = new ClipboardJS('.copyable');
+                    clipboard.on('success', function(e) {
+                        e.clearSelection();
+                        alert('Copied: ' + e.text);
+                        e.trigger.classList.add('clicked');
+                    });
+                    clipboard.on('error', function(e) {
+                        alert('Failed to copy.');
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        

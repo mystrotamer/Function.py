@@ -1,0 +1,160 @@
+
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>العمليات الحسابية</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body { padding: 20px; }
+                .table-responsive { width: 100%; margin: 20px 0; border-collapse: collapse; }
+                table, th, td { border: 1px solid black; }
+                th, td { padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .copyable { cursor: pointer; }
+                .copyable.clicked { color: red; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">العمليات الحسابية</h1>
+                <div class="table-responsive">
+                    <table border="1" class="dataframe table table-bordered table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>اسم الدالة</th>
+      <th>الصيغة العامة</th>
+      <th>الكود</th>
+      <th>النتيجة</th>
+      <th>الشرح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="الجمع">الجمع</span></td>
+      <td><span class="copyable" data-clipboard-text="a + b">a + b</span></td>
+      <td><span class="copyable" data-clipboard-text="print(5 + 3)">print(5 + 3)</span></td>
+      <td><span class="copyable" data-clipboard-text="8">8</span></td>
+      <td><span class="copyable" data-clipboard-text="جمع عددين.">جمع عددين.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="الطرح">الطرح</span></td>
+      <td><span class="copyable" data-clipboard-text="a - b">a - b</span></td>
+      <td><span class="copyable" data-clipboard-text="print(5 - 3)">print(5 - 3)</span></td>
+      <td><span class="copyable" data-clipboard-text="2">2</span></td>
+      <td><span class="copyable" data-clipboard-text="طرح عدد من آخر.">طرح عدد من آخر.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="الضرب">الضرب</span></td>
+      <td><span class="copyable" data-clipboard-text="a * b">a * b</span></td>
+      <td><span class="copyable" data-clipboard-text="print(5 * 3)">print(5 * 3)</span></td>
+      <td><span class="copyable" data-clipboard-text="15">15</span></td>
+      <td><span class="copyable" data-clipboard-text="ضرب عددين.">ضرب عددين.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="القسمة">القسمة</span></td>
+      <td><span class="copyable" data-clipboard-text="a / b">a / b</span></td>
+      <td><span class="copyable" data-clipboard-text="print(5 / 3)">print(5 / 3)</span></td>
+      <td><span class="copyable" data-clipboard-text="16667">16667</span></td>
+      <td><span class="copyable" data-clipboard-text="قسمة عدد على آخر (تُرجع عدد عشري).">قسمة عدد على آخر (تُرجع عدد عشري).</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="القسمة الأرضية">القسمة الأرضية</span></td>
+      <td><span class="copyable" data-clipboard-text="a // b">a // b</span></td>
+      <td><span class="copyable" data-clipboard-text="print(5 // 3)">print(5 // 3)</span></td>
+      <td><span class="copyable" data-clipboard-text="1">1</span></td>
+      <td><span class="copyable" data-clipboard-text="قسمة عدد على آخر (تُرجع الجزء الصحيح فقط).">قسمة عدد على آخر (تُرجع الجزء الصحيح فقط).</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="باقي القسمة">باقي القسمة</span></td>
+      <td><span class="copyable" data-clipboard-text="a % b">a % b</span></td>
+      <td><span class="copyable" data-clipboard-text="print(5 % 3)">print(5 % 3)</span></td>
+      <td><span class="copyable" data-clipboard-text="2">2</span></td>
+      <td><span class="copyable" data-clipboard-text="تُرجع باقي قسمة عدد على آخر.">تُرجع باقي قسمة عدد على آخر.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="الأس">الأس</span></td>
+      <td><span class="copyable" data-clipboard-text="a ** b">a ** b</span></td>
+      <td><span class="copyable" data-clipboard-text="print(5 ** 3)">print(5 ** 3)</span></td>
+      <td><span class="copyable" data-clipboard-text="125">125</span></td>
+      <td><span class="copyable" data-clipboard-text="رفع عدد لقوة عدد آخر.">رفع عدد لقوة عدد آخر.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="القيمة المطلقة">القيمة المطلقة</span></td>
+      <td><span class="copyable" data-clipboard-text="abs(a)">abs(a)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(abs(-5))">print(abs(-5))</span></td>
+      <td><span class="copyable" data-clipboard-text="5">5</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي القيمة المطلقة للعدد.">تعطي القيمة المطلقة للعدد.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="التقريب">التقريب</span></td>
+      <td><span class="copyable" data-clipboard-text="round(a, n)">round(a, n)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(round(3.14159, 2))">print(round(3.14159, 2))</span></td>
+      <td><span class="copyable" data-clipboard-text="3.14">3.14</span></td>
+      <td><span class="copyable" data-clipboard-text="تقرب العدد إلى عدد معين من المنازل العشرية.">تقرب العدد إلى عدد معين من المنازل العشرية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="حساب مجموع">حساب مجموع</span></td>
+      <td><span class="copyable" data-clipboard-text="sum(iterable)">sum(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(sum([1, 2, 3, 4]))">print(sum([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="10">10</span></td>
+      <td><span class="copyable" data-clipboard-text="تحسب مجموع القيم في القائمة أو المجموعة.">تحسب مجموع القيم في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="حساب أكبر قيمة">حساب أكبر قيمة</span></td>
+      <td><span class="copyable" data-clipboard-text="max(iterable)">max(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(max([1, 2, 3, 4]))">print(max([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="4">4</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي أكبر قيمة في القائمة أو المجموعة.">تعطي أكبر قيمة في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="حساب أصغر قيمة">حساب أصغر قيمة</span></td>
+      <td><span class="copyable" data-clipboard-text="min(iterable)">min(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(min([1, 2, 3, 4]))">print(min([1, 2, 3, 4]))</span></td>
+      <td><span class="copyable" data-clipboard-text="1">1</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي أصغر قيمة في القائمة أو المجموعة.">تعطي أصغر قيمة في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="قسمة وباقي القسمة">قسمة وباقي القسمة</span></td>
+      <td><span class="copyable" data-clipboard-text="divmod(a, b)">divmod(a, b)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(divmod(9, 2))">print(divmod(9, 2))</span></td>
+      <td><span class="copyable" data-clipboard-text="(4, 1)">(4, 1)</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي خارج القسمة والباقي كزوج من القيم.">تعطي خارج القسمة والباقي كزوج من القيم.</span></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <a href="index.html" class="btn btn-primary">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var clipboard = new ClipboardJS('.copyable');
+                    clipboard.on('success', function(e) {
+                        e.clearSelection();
+                        alert('Copied: ' + e.text);
+                        e.trigger.classList.add('clicked');
+                    });
+                    clipboard.on('error', function(e) {
+                        alert('Failed to copy.');
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        

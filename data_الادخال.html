@@ -1,0 +1,120 @@
+
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>الادخال</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body { padding: 20px; }
+                .table-responsive { width: 100%; margin: 20px 0; border-collapse: collapse; }
+                table, th, td { border: 1px solid black; }
+                th, td { padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .copyable { cursor: pointer; }
+                .copyable.clicked { color: red; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">الادخال</h1>
+                <div class="table-responsive">
+                    <table border="1" class="dataframe table table-bordered table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>اسم الدالة</th>
+      <th>الصيغة العامة</th>
+      <th>الكود</th>
+      <th>النتيجة</th>
+      <th>الشرح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="input">input</span></td>
+      <td><span class="copyable" data-clipboard-text="input(prompt)">input(prompt)</span></td>
+      <td><span class="copyable" data-clipboard-text="name = input("Enter your name: ")">name = input("Enter your name: ")</span></td>
+      <td><span class="copyable" data-clipboard-text="(يعتمد على الإدخال)">(يعتمد على الإدخال)</span></td>
+      <td><span class="copyable" data-clipboard-text="تأخذ الإدخال من المستخدم كقيمة نصية.">تأخذ الإدخال من المستخدم كقيمة نصية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="raw_input">raw_input</span></td>
+      <td><span class="copyable" data-clipboard-text="raw_input(prompt)">raw_input(prompt)</span></td>
+      <td><span class="copyable" data-clipboard-text="name = raw_input("Enter your name: ")">name = raw_input("Enter your name: ")</span></td>
+      <td><span class="copyable" data-clipboard-text="(يعتمد على الإدخال)">(يعتمد على الإدخال)</span></td>
+      <td><span class="copyable" data-clipboard-text="تأخذ الإدخال من المستخدم كقيمة نصية (موجودة في بايثون 2).">تأخذ الإدخال من المستخدم كقيمة نصية (موجودة في بايثون 2).</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="file read">file read</span></td>
+      <td><span class="copyable" data-clipboard-text="file.read()">file.read()</span></td>
+      <td><span class="copyable" data-clipboard-text="with open('file.txt', 'r') as file: print(file.read())">with open('file.txt', 'r') as file: print(file.read())</span></td>
+      <td><span class="copyable" data-clipboard-text="محتوى الملف">محتوى الملف</span></td>
+      <td><span class="copyable" data-clipboard-text="قراءة محتوى الملف بأكمله.">قراءة محتوى الملف بأكمله.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="file readline">file readline</span></td>
+      <td><span class="copyable" data-clipboard-text="file.readline()">file.readline()</span></td>
+      <td><span class="copyable" data-clipboard-text="with open('file.txt', 'r') as file: print(file.readline())">with open('file.txt', 'r') as file: print(file.readline())</span></td>
+      <td><span class="copyable" data-clipboard-text="أول سطر من الملف">أول سطر من الملف</span></td>
+      <td><span class="copyable" data-clipboard-text="قراءة سطر واحد من الملف.">قراءة سطر واحد من الملف.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="file readlines">file readlines</span></td>
+      <td><span class="copyable" data-clipboard-text="file.readlines()">file.readlines()</span></td>
+      <td><span class="copyable" data-clipboard-text="with open('file.txt', 'r') as file: print(file.readlines())">with open('file.txt', 'r') as file: print(file.readlines())</span></td>
+      <td><span class="copyable" data-clipboard-text="قائمة بأسطر الملف">قائمة بأسطر الملف</span></td>
+      <td><span class="copyable" data-clipboard-text="قراءة جميع الأسطر في الملف كقائمة.">قراءة جميع الأسطر في الملف كقائمة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="csv reader">csv reader</span></td>
+      <td><span class="copyable" data-clipboard-text="csv.reader(file)">csv.reader(file)</span></td>
+      <td><span class="copyable" data-clipboard-text="import csv; with open('file.csv', newline='') as file: reader = csv.reader(file); for row in reader: print(row)">import csv; with open('file.csv', newline='') as file: reader = csv.reader(file); for row in reader: print(row)</span></td>
+      <td><span class="copyable" data-clipboard-text="محتوى الملف كقائمة من الصفوف">محتوى الملف كقائمة من الصفوف</span></td>
+      <td><span class="copyable" data-clipboard-text="قراءة ملف CSV وتحليل البيانات كسلسلة من القوائم.">قراءة ملف CSV وتحليل البيانات كسلسلة من القوائم.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="json load">json load</span></td>
+      <td><span class="copyable" data-clipboard-text="json.load(file)">json.load(file)</span></td>
+      <td><span class="copyable" data-clipboard-text="import json; with open('file.json') as file: data = json.load(file); print(data)">import json; with open('file.json') as file: data = json.load(file); print(data)</span></td>
+      <td><span class="copyable" data-clipboard-text="محتوى الملف كقاموس">محتوى الملف كقاموس</span></td>
+      <td><span class="copyable" data-clipboard-text="قراءة وتحليل ملف JSON إلى كائن بايثون.">قراءة وتحليل ملف JSON إلى كائن بايثون.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="configparser">configparser</span></td>
+      <td><span class="copyable" data-clipboard-text="config.read(file)">config.read(file)</span></td>
+      <td><span class="copyable" data-clipboard-text="import configparser; config = configparser.ConfigParser(); config.read('file.ini'); print(config.sections())">import configparser; config = configparser.ConfigParser(); config.read('file.ini'); print(config.sections())</span></td>
+      <td><span class="copyable" data-clipboard-text="الأقسام في الملف">الأقسام في الملف</span></td>
+      <td><span class="copyable" data-clipboard-text="قراءة ملف تكوين وتحليل البيانات إلى كائن ConfigParser.">قراءة ملف تكوين وتحليل البيانات إلى كائن ConfigParser.</span></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <a href="index.html" class="btn btn-primary">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var clipboard = new ClipboardJS('.copyable');
+                    clipboard.on('success', function(e) {
+                        e.clearSelection();
+                        alert('Copied: ' + e.text);
+                        e.trigger.classList.add('clicked');
+                    });
+                    clipboard.on('error', function(e) {
+                        alert('Failed to copy.');
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        

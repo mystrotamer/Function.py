@@ -1,0 +1,160 @@
+
+        <!DOCTYPE html>
+        <html lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>الاساسيات</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body { padding: 20px; }
+                .table-responsive { width: 100%; margin: 20px 0; border-collapse: collapse; }
+                table, th, td { border: 1px solid black; }
+                th, td { padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                .copyable { cursor: pointer; }
+                .copyable.clicked { color: red; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">الاساسيات</h1>
+                <div class="table-responsive">
+                    <table border="1" class="dataframe table table-bordered table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>اسم الدالة</th>
+      <th>الصيغة العامة</th>
+      <th>الكود</th>
+      <th>النتيجة</th>
+      <th>الشرح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="print">print</span></td>
+      <td><span class="copyable" data-clipboard-text="print(value)">print(value)</span></td>
+      <td><span class="copyable" data-clipboard-text="print("Hello, World!")">print("Hello, World!")</span></td>
+      <td><span class="copyable" data-clipboard-text="Hello, World!">Hello, World!</span></td>
+      <td><span class="copyable" data-clipboard-text="تطبع النص أو القيم إلى وحدة الإخراج القياسية.">تطبع النص أو القيم إلى وحدة الإخراج القياسية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="len">len</span></td>
+      <td><span class="copyable" data-clipboard-text="len(iterable)">len(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(len("Hello"))">print(len("Hello"))</span></td>
+      <td><span class="copyable" data-clipboard-text="5">5</span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي طول السلسلة أو القائمة أو أي كائن قابل للتكرار.">تعطي طول السلسلة أو القائمة أو أي كائن قابل للتكرار.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="type">type</span></td>
+      <td><span class="copyable" data-clipboard-text="type(object)">type(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(type(5))">print(type(5))</span></td>
+      <td><span class="copyable" data-clipboard-text="<class 'int'>"><class 'int'></span></td>
+      <td><span class="copyable" data-clipboard-text="تعطي نوع الكائن.">تعطي نوع الكائن.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="str">str</span></td>
+      <td><span class="copyable" data-clipboard-text="str(object)">str(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(str(123))">print(str(123))</span></td>
+      <td><span class="copyable" data-clipboard-text="'123'">'123'</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل الكائن إلى سلسلة نصية.">تحويل الكائن إلى سلسلة نصية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="int">int</span></td>
+      <td><span class="copyable" data-clipboard-text="int(object)">int(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(int("123"))">print(int("123"))</span></td>
+      <td><span class="copyable" data-clipboard-text="123">123</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل الكائن إلى عدد صحيح.">تحويل الكائن إلى عدد صحيح.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="float">float</span></td>
+      <td><span class="copyable" data-clipboard-text="float(object)">float(object)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(float("123.45"))">print(float("123.45"))</span></td>
+      <td><span class="copyable" data-clipboard-text="123.45">123.45</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل الكائن إلى عدد عشري.">تحويل الكائن إلى عدد عشري.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="list">list</span></td>
+      <td><span class="copyable" data-clipboard-text="list(iterable)">list(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(list("hello"))">print(list("hello"))</span></td>
+      <td><span class="copyable" data-clipboard-text="['h', 'e', 'l', 'l', 'o']">['h', 'e', 'l', 'l', 'o']</span></td>
+      <td><span class="copyable" data-clipboard-text="تحويل كائن قابل للتكرار إلى قائمة.">تحويل كائن قابل للتكرار إلى قائمة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="dict">dict</span></td>
+      <td><span class="copyable" data-clipboard-text="dict()">dict()</span></td>
+      <td><span class="copyable" data-clipboard-text="print(dict(a=1, b=2))">print(dict(a=1, b=2))</span></td>
+      <td><span class="copyable" data-clipboard-text="{'a': 1, 'b': 2}">{'a': 1, 'b': 2}</span></td>
+      <td><span class="copyable" data-clipboard-text="إنشاء قاموس جديد.">إنشاء قاموس جديد.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="range">range</span></td>
+      <td><span class="copyable" data-clipboard-text="range(start, stop)">range(start, stop)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(list(range(1, 5)))">print(list(range(1, 5)))</span></td>
+      <td><span class="copyable" data-clipboard-text="[1, 2, 3, 4]">[1, 2, 3, 4]</span></td>
+      <td><span class="copyable" data-clipboard-text="توليد سلسلة من الأعداد من بداية إلى نهاية معينة.">توليد سلسلة من الأعداد من بداية إلى نهاية معينة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="input">input</span></td>
+      <td><span class="copyable" data-clipboard-text="input(prompt)">input(prompt)</span></td>
+      <td><span class="copyable" data-clipboard-text="name = input("Enter your name: ")">name = input("Enter your name: ")</span></td>
+      <td><span class="copyable" data-clipboard-text="(يعتمد على الإدخال)">(يعتمد على الإدخال)</span></td>
+      <td><span class="copyable" data-clipboard-text="أخذ إدخال من المستخدم كقيمة نصية.">أخذ إدخال من المستخدم كقيمة نصية.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="sorted">sorted</span></td>
+      <td><span class="copyable" data-clipboard-text="sorted(iterable)">sorted(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(sorted([3, 1, 2]))">print(sorted([3, 1, 2]))</span></td>
+      <td><span class="copyable" data-clipboard-text="[1, 2, 3]">[1, 2, 3]</span></td>
+      <td><span class="copyable" data-clipboard-text="ترتيب العناصر في القائمة أو الكائن القابل للتكرار.">ترتيب العناصر في القائمة أو الكائن القابل للتكرار.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="sum">sum</span></td>
+      <td><span class="copyable" data-clipboard-text="sum(iterable)">sum(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(sum([1, 2, 3]))">print(sum([1, 2, 3]))</span></td>
+      <td><span class="copyable" data-clipboard-text="6">6</span></td>
+      <td><span class="copyable" data-clipboard-text="حساب مجموع القيم في القائمة أو المجموعة.">حساب مجموع القيم في القائمة أو المجموعة.</span></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td><span class="copyable" data-clipboard-text="enumerate">enumerate</span></td>
+      <td><span class="copyable" data-clipboard-text="enumerate(iterable)">enumerate(iterable)</span></td>
+      <td><span class="copyable" data-clipboard-text="print(list(enumerate("abc")))">print(list(enumerate("abc")))</span></td>
+      <td><span class="copyable" data-clipboard-text="[(0, 'a'), (1, 'b'), (2, 'c')]">[(0, 'a'), (1, 'b'), (2, 'c')]</span></td>
+      <td><span class="copyable" data-clipboard-text="إعطاء قائمة من tuples تحتوي على الفهارس والقيم.">إعطاء قائمة من tuples تحتوي على الفهارس والقيم.</span></td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+                <a href="index.html" class="btn btn-primary">العودة إلى الصفحة الرئيسية</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var clipboard = new ClipboardJS('.copyable');
+                    clipboard.on('success', function(e) {
+                        e.clearSelection();
+                        alert('Copied: ' + e.text);
+                        e.trigger.classList.add('clicked');
+                    });
+                    clipboard.on('error', function(e) {
+                        alert('Failed to copy.');
+                    });
+                });
+            </script>
+        </body>
+        </html>
+        
